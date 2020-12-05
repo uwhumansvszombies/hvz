@@ -1,0 +1,10 @@
+name: HvZ
+version: 1.0
+author: uwhvz
+description: Join the Horde!
+main: ca.uwhvz.hvz.HvZ
+api-version: 1.13
+
+commands:
+  hvz:
+    description: HvZ Base command

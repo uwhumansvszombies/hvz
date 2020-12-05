@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HvZ:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HvZ_jar</output-path>
+    <root id="archive" name="hvz.jar">
+      <element id="module-output" name="hvz" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Minecraft Modding/spigot-1.16.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../HungerGames/lib/placeholderapi-2.10.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

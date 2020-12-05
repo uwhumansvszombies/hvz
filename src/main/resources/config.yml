@@ -1,0 +1,25 @@
+## HvZ
+# Written by FireMaster1294
+
+settings:
+    running: false # Handled internally. Can be set to toggle a game as "on" manually or used to freeze game.
+    freeze: false # Handled internally. Use with care! Makes players invulnerable and unable to move.
+    respawn-time: 10 # In seconds.
+    respawn-points: false # Recommended to set respawn to low if this is true
+    rideable-life: 30 # In seconds. Name entity "immortal" to override this. Can set to -1 to ignore or 0 for no entities.
+    ozs: 10 # Must be greater than 0. Number to start with. Will add from team "player" until team "zombie" has this many.
+    insta-kill: false
+    insta-stun: false
+    wool: true # gives players a stack of wool to place and unbreakable shears
+    wool-replace-time: 30 # in seconds, number of seconds till wool vanishes!
+    shulker-messages: false # Particularly nasty - sends a message when shulkers are opened.
+    trackingstick-uses: 3 # Can be given by mods
+    corner1: 100,100 # Must be of the format x,z without a space
+    corner2: -100,-100
+    respawn-locations: 0,75,0 # Must be of the format x,y,z;x,y,z without a space
+    local-chat: 30 # distance required to be able to hear someone in chat
+    regen-amount: 0.5 # regen amount in hearts
+    regen-time: 1 # regen time in seconds
+
+## - Location(x,y,z) Name
+locations:

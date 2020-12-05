@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="placeholderapi-2.10.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../HungerGames/lib/placeholderapi-2.10.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

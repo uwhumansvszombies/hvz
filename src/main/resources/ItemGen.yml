@@ -1,0 +1,81 @@
+## HvZ
+# Written by FireMaster1294
+
+# Name of block to replace
+## - ITEM amount(default=1) N:name P:probability(default=10) Enchantments(default=none)
+## Important: There should be no spaces except separating different data info sections
+## An items name must appear exactly as it is registered in minecraft or it will be disregarded
+## Potions are of the format Potion:[NAME:LVL:TIME]
+blocks:
+    MAGENTA_CONCRETE_POWDER:
+    - ARROW 10
+    - ARROW 20
+    - ARROW 15
+    - ARROW 30
+    - EMERALD 2
+    - EMERALD
+    - EMERALD 3
+    - BOW
+    - STONE_SWORD
+    - BOW Enchantments:[PUNCH:1]
+    - BOW Enchantments:[FLAME:1]
+    - WOODEN_SWORD Enchantments:[KNOCKBACK:1]
+    - IRON_SWORD
+    - IRON_AXE
+    - WOODEN_SWORD
+    - WOODEN_AXE
+    - MINECART
+    - GOLDEN_HOE
+    - GOLDEN_AXE
+    - GOLDEN_SWORD
+    - CHAINMAIL_CHESTPLATE
+    - IRON_CHESTPLATE
+    - IRON_LEGGINGS
+    - IRON_BOOTS
+    - LEATHER_BOOTS
+    - LEATHER_CHESTPLATE
+    - LEATHER_LEGGINGS
+    - IRON_BOOTS Enchantments:[FEATHER_FALLING:3]
+    - IRON_CHESTPLATE Enchantments:[PROTECTION:4]
+    - GOLDEN_CHESTPLATE Enchantments:[PROTECTION:4]
+    - IRON_LEGGINGS Enchantments:[PROTECTION:2]
+    - GOLDEN_LEGGINGS Enchantments:[FIRE_PROTECTION:3]
+    - GOLDEN_BOOTS
+    - GOLDEN_APPLE
+    - EMERALD 2
+    - EMERALD
+    - EMERALD 3
+    - ENCHANTED_GOLDEN_APPLE P:5
+    - SPLASH_POTION Potion:[POISON:0:10]
+    - SPLASH_POTION Potion:[REGENERATION:0:10]
+    - SPLASH_POTION Potion:[SPEED:0:45]
+    - SPLASH_POTION Potion:[SLOW_FALLING:0:45]
+    - SPLASH_POTION Potion:[STRENGTH:0:90]
+    - SPLASH_POTION Potion:[STRENGTH:1:30]
+    - TRIDENT
+    - EMERALD 2
+    - EMERALD
+    - EMERALD 3
+
+    LIGHT_BLUE_CONCRETE_POWDER:
+    - GOLDEN_CHESTPLATE Enchantments:[THORNS:2]
+    - GOLDEN_LEGGINGS
+    - GOLDEN_BOOTS Enchantments:[DEPTH_STRIDER:4]
+    - GOLDEN_BOOTS Enchantments:[FROST_WALKER:0]
+    - GOLDEN_APPLE
+    - ENCHANTED_GOLDEN_APPLE
+    - TRIDENT Enchantments:[RIPTIDE:2]
+    - ARROW 50
+    - SPECTRAL_ARROW 10
+    - GOLDEN_SWORD Enchantments:[SHARPNESS:1]
+    - TIPPED_ARROW 10 Potion:[POISON:0:10]
+    - POTION Potion:[STRENGTH:0:60]
+    - POTION Potion:[STRENGTH:1:30]
+    - POTION Potion:[SPEED:0:60]
+    - POTION Potion:[SLOW_FALLING:0:60]
+    - POTION Potion:[SPEED:1:30]
+    - POTION Potion:[SPEED:4:30]
+    - SPLASH_POTION Potion:[POISON:0:10]
+    - SPLASH_POTION Potion:[REGENERATION:0:10]
+    - BOW Enchantments:[PUNCH:2]
+    - BOW Enchantments:[INFINITY:0]
