@@ -19,8 +19,6 @@ blocks:
     - STONE_SWORD
     - BOW Enchantments:[PUNCH:1]
     - BOW Enchantments:[FLAME:1]
-    - STICK N:BouncyBoi Enchantments:[KNOCKBACK:2]
-    - STICK N:FireyBoi Enchantments:[FIRE_ASPECT:1]
     - WOODEN_SWORD Enchantments:[KNOCKBACK:1]
     - IRON_SWORD
     - IRON_AXE
@@ -37,13 +35,16 @@ blocks:
     - LEATHER_BOOTS
     - LEATHER_CHESTPLATE
     - LEATHER_LEGGINGS
-    - IRON_BOOTS Enchantments:[FALL_PROTECTION:3]
+    - IRON_BOOTS Enchantments:[FEATHER_FALLING:3]
     - IRON_CHESTPLATE Enchantments:[PROTECTION:4]
     - GOLDEN_CHESTPLATE Enchantments:[PROTECTION:4]
     - IRON_LEGGINGS Enchantments:[PROTECTION:2]
     - GOLDEN_LEGGINGS Enchantments:[FIRE_PROTECTION:3]
     - GOLDEN_BOOTS
     - GOLDEN_APPLE
+    - EMERALD 2
+    - EMERALD
+    - EMERALD 3
     - ENCHANTED_GOLDEN_APPLE P:5
     - SPLASH_POTION Potion:[POISON:0:10]
     - SPLASH_POTION Potion:[REGENERATION:0:10]
@@ -52,6 +53,9 @@ blocks:
     - SPLASH_POTION Potion:[STRENGTH:0:90]
     - SPLASH_POTION Potion:[STRENGTH:1:30]
     - TRIDENT
+    - EMERALD 2
+    - EMERALD
+    - EMERALD 3
 
     LIGHT_BLUE_CONCRETE_POWDER:
     - GOLDEN_CHESTPLATE Enchantments:[THORNS:2]
