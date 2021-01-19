@@ -19,7 +19,8 @@ settings:
     respawn-locations: 0,75,0 # Must be of the format x,y,z;x,y,z without a space
     local-chat: 30 # distance required to be able to hear someone in chat
     regen-amount: 0.5 # regen amount in hearts
-    regen-time: 1 # regen time in seconds
+    regen-time-zombies: 1 # regen time in seconds - more is faster
+    regen-time-humans: 0.75 # regen time in seconds - less is faster
 
 ## - Location(x,y,z) Name
 locations:

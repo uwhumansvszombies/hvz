@@ -109,8 +109,11 @@ public class SetCmd extends BaseCmd {
 				if (args[1].equalsIgnoreCase("regen-amount")) {
 					Config.regen_amount = to_set;
 				}
-				if (args[1].equalsIgnoreCase("regen-time")) {
-					Config.regen_time = to_set;
+				if (args[1].equalsIgnoreCase("regen-time-zombies")) {
+					Config.regen_time_zombies = to_set;
+				}
+				if (args[1].equalsIgnoreCase("regen-time-humans")) {
+					Config.regen_time_humans = to_set;
 				}
 				plugin.getConfig().set("settings." + args[1],to_set);
 				Util.scm(sender, lang.config_change_confirm.replace("<setting>", args[1]).replace("<value>", args[2]));

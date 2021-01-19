@@ -74,6 +74,9 @@ public class CommandListener implements CommandExecutor, TabCompleter {
 				listSet.add("wool");
 				listSet.add("wool-replace-time");
 				listSet.add("local-chat");
+				listSet.add("regen-amount");
+				listSet.add("regen-time-humans");
+				listSet.add("regen-time-zombies");
 				ArrayList<String> matchesSet = new ArrayList<>();
 				for (String name : listSet) {
 					if (StringUtil.startsWithIgnoreCase(name, args[1])) {

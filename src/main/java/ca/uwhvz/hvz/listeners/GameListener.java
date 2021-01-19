@@ -92,9 +92,12 @@ public class GameListener implements Listener {
 	@EventHandler
 	private void healthregen(EntityRegainHealthEvent event) {
 		Player player = (Player) event.getEntity();
-		if (Config.running && (event.getRegainReason() == EntityRegainHealthEvent.RegainReason.SATIATED ||
+		if (Config.running && Util.inGame(player) && (event.getRegainReason() == EntityRegainHealthEvent.RegainReason.SATIATED ||
 				event.getRegainReason() == EntityRegainHealthEvent.RegainReason.REGEN)){
 			event.setCancelled(true);
+			long regen_time = 1;
+			if (Util.inTeam(player,"human")) regen_time = (long) Config.regen_time_humans;
+			else regen_time = (long) Config.regen_time_zombies;
 			Bukkit.getScheduler().scheduleAsyncDelayedTask(HvZ.getPlugin(), new BukkitRunnable() {
 				double health_left = player.getHealth();
 				@Override
@@ -105,7 +108,7 @@ public class GameListener implements Listener {
 						health_left = health_left - Config.regen_amount;
 					};
 				}},
-					(long) (20 * Config.regen_time));
+					(long) (20 * regen_time));
 		}
 	}
 
@@ -248,7 +251,8 @@ public class GameListener implements Listener {
 		if (event.getEntity() instanceof Player) {
 			final Player player = ((Player) event.getEntity());
 			if (!Util.inGame(player)) return;
-			if (Util.inTeam(player,"mod") || Util.inTeam(player, "spectator")) {
+			if (Util.inTeam(player,"mod") || Util.inTeam(player, "spectator") ||
+					(Util.inGame(player) && ! Config.running)) {
 				event.setCancelled(true);
 				player.setFireTicks(0);
 				return;
@@ -274,6 +278,7 @@ public class GameListener implements Listener {
 		EntityDamageEvent.DamageCause cause = event.getCause();
 		if (! Util.inGame(player)) return;
 		if (Util.inTeam(player,"human")) {dropInv(player);}
+		if (Util.inTeam(player,"zombie")) {player.getWorld().dropItemNaturally(player.getLocation(), new ItemStack(Material.EMERALD,2));}
 		player.setHealth(20);
 		player.setFoodLevel(20);
 		player.setSaturation(20);

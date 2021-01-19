@@ -31,7 +31,8 @@ public class Config {
     public static String respawn_locations;
     public static int local_chat;
     public static int wool_replace_time;
-    public static double regen_time;
+    public static double regen_time_zombies;
+    public static double regen_time_humans;
     public static double regen_amount;
 
     //Event Location Management
@@ -77,7 +78,8 @@ public class Config {
         corner2 = config.getString("settings.corner2");
         respawn_locations = config.getString("settings.respawn-locations");
         local_chat = config.getInt("settings.local-chat");
-        regen_time = config.getDouble("settings.regen-time");
+        regen_time_zombies = config.getDouble("settings.regen-time-zombies");
+        regen_time_humans = config.getDouble("settings.regen-time-humans");
         regen_amount = config.getDouble("settings.regen-amount");
 
         Util.log("&7Loading event locations...");

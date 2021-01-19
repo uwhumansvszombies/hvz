@@ -43,7 +43,8 @@ public class InfoCmd extends BaseCmd {
 			Util.scm(sender, "corner1 : " + Config.corner1);
 			Util.scm(sender, "corner2 : " + Config.corner2);
 			Util.scm(sender, "local-chat : " + Config.local_chat);
-			Util.scm(sender, "regen-time : " + Config.regen_time);
+			Util.scm(sender, "regen-time-humans : " + Config.regen_time_humans);
+			Util.scm(sender, "regen-time-zombies : " + Config.regen_time_zombies);
 			Util.scm(sender, "regen-amount : " + Config.regen_amount);
 		}
 		return true;
